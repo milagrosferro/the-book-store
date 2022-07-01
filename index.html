@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>clase 1 -Variables</title>
+</head>
+<body>
+    <header class="header" >
+        <nav class="navbar navbar-expand-lg ">
+            
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./recursos/logo.png" alt=" The story shop logo" class="header__logo">THE BOOK STORE
+                </a>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Libros
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+       <!-- <nav class="navbar navbar-fixed-top ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                <img src="./recursos/logo.png" alt=" The story shop logo" class="header__logo">THE BOOK STORE
+              </a>
+            </div> 
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                </ul>
+            </div>
+            <div class="serch__bar">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div> 
+        </nav> -->       
+    </header>  
+    <main>
+        <section class="carousel">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./recursos/alice_kellen_alaska.jpg" class="" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./recursos/nick.charlie.jpg" class="" alt="...">
+                </div>
+                <div class="carousel__button">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <h1>ENCONTRA TU PROXIMA LECTURA ACÁ</h1>
+        <section class="products">
+            <div class="productscard">
+                <div class="productscard__son" style="width: 18rem;">
+                    <img src="./recursos/heartstopper.jpg" class="book__img" alt="heartstopper">
+                    <div class="card-body">
+                    <h5 class="card__title">Heartstopper</h5>
+                    <p class="card__text">$1.999,00</p>
+                    <a href="#" class="card__btn">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="productscard">
+                <div class="productscard__son" style="width: 18rem;">
+                    <img src="./recursos/heartless.jpg" class="book__img" alt="Heartless">
+                    <div class="card-body">
+                    <h5 class="card__title">Heartless</h5>
+                    <p class="card__text">$2.499,00</p>
+                    <a href="#" class="card__btn">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="productscard">
+                <div class="productscard__son" style="width: 18rem;">
+                    <img src="./recursos/de.sangre.y.cenizas.png" class="book__img" alt="De sangre y cenizas">
+                    <div class="card-body">
+                    <h5 class="card__title">De sangre y cenizas</h5>
+                    <p class="card__text">$2.990,00</p>
+                    <a href="#" class="card__btn">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="productscard">
+                <div class="productscard__son" style="width: 18rem;">
+                    <img src="./recursos/asesino.de.brujas.jpg" class="book__img" alt="Asesino de brujas">
+                    <div class="card-body">
+                    <h5 class="card__title">Asesino de brujas</h5>
+                    <p class="card__text">$2.390,00</p>
+                    <a href="#" class="card__btn">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="productscard">
+                <div class="productscard__son" style="width: 18rem;">
+                    <img src="./recursos/reino.de.papel.png" class="book__img" alt="Reino de papel">
+                    <div class="card-body">
+                    <h5 class="card__title">Reino de papel</h5>
+                    <p class="card__text">$2.299,00</p>
+                    <a href="#" class="card__btn">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="productscard">
+                <div class="productscard__son" style="width: 18rem;">
+                    <img src="./recursos/otoños.png" class="book__img" alt="Otoños sin ti">
+                    <div class="card-body">
+                    <h5 class="card__title">23 Otoños antes de ti</h5>
+                    <p class="card__text">$7.497,00</p>
+                    <a href="#" class="card__btn">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="productscard">
+                <div class="productscard__son" style="width: 18rem;">
+                    <img src="./recursos/nosotros.en.la.luna.jpg " class="book__img" alt="Nosotros en la luna">
+                    <div class="card-body">
+                    <h5 class="card__title">Nosotros en la luna</h5>
+                    <p class="card__text">$19.000,00</p>
+                    <a href="#" class="card__btn">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="productscard">
+                <div class="productscard__son" style="width: 18rem;">
+                    <img src="./recursos/el.bosque.png" class="book__img" alt="El bosque de las cosas perdidas">
+                    <div class="card-body">
+                    <h5 class="card__title">El bosque de las cosas perdidas</h5>
+                    <p class="card__text">$2.299,00</p>
+                    <a href="#" class="card__btn">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="productscard">
+                <div class="productscard__son" style="width: 18rem;">
+                    <img src="./recursos/hecha.de.estrellas.jpg" class="book__img" alt="Hecha de estrellas">
+                    <div class="card-body">
+                    <h5 class="card__title">Hecha de estrellas</h5>
+                    <p class="card__text">$2.497,00</p>
+                    <a href="#" class="card__btn">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer> </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
