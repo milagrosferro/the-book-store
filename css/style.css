@@ -50,14 +50,18 @@ ul {
 
 .btn{
     margin-right: 3%;
-    background-color: #387475;
+   
+    border-color: #ffffff;
     color: #fff;
     transition-property: background-color;
-    transition-duration: 0,7s;
+    transition-property: border-color;
+    transition-duration: 0,0s;
+    height: 5vh;
 }
 
 .btn:hover, .btn:focus {
-    background-color: #607d7e;
+    background-color: #ffffff;
+    border-color: #ffffff;
     color:  #fff;
 }
 

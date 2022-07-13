@@ -15,7 +15,7 @@ function calcula_precio() {
         " 2 Heartstopper, "+
         " 3 De sangre y cenizas. ");
         let precio= prompt("Ingresa el numero listado del libro a consultar. Si no quieres hacerlo esribe 'ESC'");
-        while (precio != "ESC". toUpperCase ){
+        while (precio != "ESC".toUpperCase ()){
             switch(precio.toUpperCase()){
                 case "1":
                     alert( "El precio de Reino de papel por unidad es de $2.299,00");
