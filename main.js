@@ -1,10 +1,4 @@
-/*let libro = prompt ("Ingresa el titulo de un libro") ;
 
-while (libro != "ESC" ){
-    alert("Ingresaste " + libro);
-
-    libro = prompt ("Ingresa otro, si no queres hacerlo deberas escribi ESC");
-}*/
 calcula_precio()
 
 function calcula_precio() {
@@ -14,8 +8,8 @@ function calcula_precio() {
         " 1 Reino de papel, "+
         " 2 Heartstopper, "+
         " 3 De sangre y cenizas. ");
-        let precio= prompt("Ingresa el numero listado del libro a consultar. Si no quieres hacerlo esribe 'ESC'");
-        while (precio != "ESC".toUpperCase ()){
+       let precio= prompt("Ingresa el numero listado del libro a consultar. Si no quieres hacerlo esribe 'ESC'");
+        while (precio.toUpperCase() != "ESC"){
             switch(precio.toUpperCase()){
                 case "1":
                     alert( "El precio de Reino de papel por unidad es de $2.299,00");
@@ -38,7 +32,26 @@ function calcula_precio() {
                 default:
                     alert("Actualmente no tenemos stock");
                     break;    
-            }precio= prompt ("Si quieres saber el valor de otro libro vuelve a seleccionar el numero listado"+
+            }
+
+            class Producto{
+                constructor(nombre){
+                    this.nombre = nombre;
+                }
+            }
+            let productos = []
+            
+            const agregaCarrito =() =>{
+                let nombre = prompt ("Ingresa el nombre del libro que deseas agregar a tu carrito.")
+            
+                let agregado = new Producto(nombre);
+                productos. push (agregado);
+                console.log(productos)
+            }
+            
+            agregaCarrito()
+
+            precio= prompt ("Si quieres saber el valor de otro libro vuelve a seleccionar el numero listado"+
             " 1 Reino de papel, "+
             " 2 Heartstopper, "+
             " 3 De sangre y cenizas. "+
@@ -68,3 +81,4 @@ function dscPrecio (dsc){
 function total (cantidades){
     alert(`Tu total es de $ ${cantidades}`)
 }
+
