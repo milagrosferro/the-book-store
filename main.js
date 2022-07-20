@@ -2,9 +2,9 @@
 calcula_precio()
 
 function calcula_precio() {
-    let nombre= prompt("Ingresa tu nombre");
-    if (nombre != "ESC" ){
-        alert(`Estos son nuestros libros en stock ,  ${nombre}.`+
+    let nombreUsuario= prompt("Ingresa tu nombre");
+    if (nombreUsuario != "ESC" ){
+        alert(`Estos son nuestros libros en stock ,  ${nombreUsuario}.`+
         " 1 Reino de papel, "+
         " 2 Heartstopper, "+
         " 3 De sangre y cenizas. ");
@@ -29,7 +29,7 @@ function calcula_precio() {
                     total(dscPrecio(dsc));
                     break;   
                     
-                default:
+                default:search
                     alert("Actualmente no tenemos stock");
                     break;    
             }
@@ -39,17 +39,41 @@ function calcula_precio() {
                     this.nombre = nombre;
                 }
             }
-            let productos = []
+            let listaProductos=[
+                {nombre:"Heartstopper", precio: 1999, genero: "Romance"},
+                {nombre:"Heartless", precio: 2499, genero: "Romance"},
+                {nombre:"De Sangre y Cenizas ", precio: 2990, genero: "Fantasia"},
+                {nombre:"Asesino de brujas", precio: 2390, genero: "Romance"},
+                {nombre:"Reino de papel", precio: 2299, genero: "Romance"},
+                {nombre:"El bosque de las cosasearchs perdidas", precio: 2299, genero: "Misterio"}
+            ]
+
+            let filterGenero = prompt("¿Que genero buscas?");
+            let buscarGenero = listaProductos.filter(producto => producto.genero)
+            console.log(buscarGenero);
+
+            let productos = [
+               
+            ]
+
             
             const agregaCarrito =() =>{
                 let nombre = prompt ("Ingresa el nombre del libro que deseas agregar a tu carrito.")
-            
                 let agregado = new Producto(nombre);
                 productos. push (agregado);
                 console.log(productos)
             }
+
+
             
             agregaCarrito()
+
+            let totalCarrito
+            productos.forEach(producto => {
+                console.log (`Agregaste ${producto.nombre}`)
+                totalCarrito 
+            })
+
 
             precio= prompt ("Si quieres saber el valor de otro libro vuelve a seleccionar el numero listado"+
             " 1 Reino de papel, "+
